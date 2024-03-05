@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="files/reset.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Главная</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__box">
+      <div class="header__logo">
+        <a href="/"><img src="img/header/logo.svg" alt="логотип" /></a>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="menu__item"><a href="#">Чему вы научитесь</a></li>
+          <li class="menu__item"><a href="#">Процесс обучения</a></li>
+          <li class="menu__item"><a href="#">Стоимость</a></li>
+          <li class="menu__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__office">
+        <a href="#" class="header__reg">Регистрация</a>
+        <button class="header__btn btn">
+          <span class="header__btn-img"
+            ><img src="img/header/Rectangle 8.svg" alt="кабинет"
+          /></span>
+          <span class="header__btn-text">Войти</span>
+        </button>
+      </div>
+    </div>
+    <div class="header__content">
+      <h1 class="header__title">
+        Школа <span class="header__title-decor">{</span
+        ><span class="header__title-text">программирования</span
+        ><span class="header__title-decor">}</span>для тех, кому нужны реальные
+        навыки, <br />а не просто сертификат
+      </h1>
+      <p class="header__text">
+        Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам
+      </p>
+      <button class="header__title-btn btn">
+        <span class="header__content-text">Пройти тестирование</span>
+        <span class="header__btn-img"
+          ><img src="img/header/Arrow 1.svg" alt="Пройти тестирование"
+        /></span>
+      </button>
+    </div>
+    <div class="header__back-img">
+      <picture>
+        <source media="(max-width: 960px)" srcset="img/header/mob_photo.png" />
+        <img src="img/header/Group 132.png" alt="школа программирования" />
+      </picture>
+    </div>
+  </div>
+  <a class="arrow__box" href="#"
+    ><img src="img/header/Arrow 5.svg" alt="стрелка"
+  /></a>
+  <div class="canvas">
+    <canvas id="canvas"></canvas>
+    <div class="canvas__fone left"></div>
+    <div class="canvas__fone right"></div>
+  </div>
+  <div class="header__mob-menu">
+    <div class="header__fone"></div>
+    <div class="header__mob-box">
+      <button class="header__close"></button>
+      <nav class="header__menu-mob">
+        <ul class="header__list-mob">
+          <li class="menu__item"><a href="#">Чему вы научитесь</a></li>
+          <li class="menu__item"><a href="#">Процесс обучения</a></li>
+          <li class="menu__item"><a href="#">Стоимость</a></li>
+          <li class="menu__item"><a href="#">Контакты</a></li>
+          <li class="menu__item">
+            <a href="#" class="header__reg mob">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__btn btn mob">
+        <span class="header__btn-img"
+          ><img src="img/header/Rectangle 8.svg" alt="кабинет"
+        /></span>
+        <span class="header__btn-text">Войти</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <main>
+        <section class="technology">
+  <div class="container">
+    <h2 class="main__title">Какие технологии вы изучите:</h2>
+    <div class="technology__items-box">
+      <div class="technology__img">
+        <img src="img/main/g10.png" alt="школа программирования" />
+      </div>
+      <div class="technology__item-box">
+        <p
+          class="technology__item btn mob100"
+          style="background-color: #4b77b9"
+        >
+          Язык программирования Python
+        </p>
+        <p class="technology__item btn" style="background-color: #ffb359">
+          Сети
+        </p>
+        <p class="technology__item btn" style="background-color: #ff6f50">
+          Базы данных
+        </p>
+        <p
+          class="technology__item btn mob100"
+          style="background-color: #4bd071"
+        >
+          Фреймворки Flask и Django
+        </p>
+        <p
+          class="technology__item btn mob100"
+          style="background-color: #50c0ff"
+        >
+          Отладка и тестирование
+        </p>
+        <p class="technology__item btn" style="background-color: #4b77b9">
+          Docker
+        </p>
+        <p class="technology__item btn" style="background-color: #af93ff">
+          Git
+        </p>
+      </div>
+      <p class="technology__text">
+        Это необходимый минимум для современного backend-разработчика
+      </p>
+    </div>
+  </div>
+</section>
+ <section class="training">
+  <div class="container">
+    <h2 class="main__title">Обучение в YtYt – это удобно и результативно</h2>
+    <div class="training__box">
+      <div class="training__item">
+        <img src="img/training/training1.svg" alt="школа программирования" />
+        <h3>Огромное количество практики</h3>
+        <p>
+          Более 500 самостоятельных заданий и 20 полноценных больших проектов
+        </p>
+      </div>
+      <div class="training__item">
+        <img src="img/training/training2.svg" alt="школа программирования" />
+        <h3>Современные методики обучения</h3>
+        <p>
+          Спиральное обучение: погружаемся в материал постепенно, виток за
+          витком
+        </p>
+      </div>
+      <div class="training__item">
+        <img src="img/training/training3.svg" alt="школа программирования" />
+        <h3>Простое и понятное изложение</h3>
+        <p>Вместо заумных терминов – примеры из реального мира</p>
+      </div>
+      <div class="training__item">
+        <img src="img/training/training4.svg" alt="школа программирования" />
+        <h3>Гибкий график занятий</h3>
+        <p>Учитесь в любое время в удобном для вас темпе</p>
+      </div>
+      <div class="training__item">
+        <img src="img/training/training5.svg" alt="школа программирования" />
+        <h3>Прямая связь с опытными программистами</h3>
+        <p>Задавайте вопросы и отправляйте свой код на проверку</p>
+      </div>
+      <div class="training__item">
+        <img src="img/training/training6.svg" alt="школа программирования" />
+        <h3>Оплата небольшими частями</h3>
+        <p>
+          Платите только за тот материал, который сейчас изучаете, а не за весь
+          курс сразу
+        </p>
+      </div>
+      <div class="training__item">
+        <img src="img/training/training7.svg" alt="школа программирования" />
+        <h3>Быстрый и легкий возврат</h3>
+        <p>Если передумаете учиться – вернем деньги за 3 рабочих дня</p>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="how">
+  <div class="container">
+    <h2 class="main__title">Как происходит обучение на YtYt?</h2>
+    <p class="how__text">
+      Обучение должно быть комфортным. Поэтому мы разработали собственную
+      платформу для обучения программированию. На ней вы можете не только
+      изучать теорию, но и запускать готовые примеры и даже писать свой
+      собственный код.
+    </p>
+    <video
+      class="how__video"
+      src="https://youtu.be/akDbM3DtrTA?si=l8C1zs_XtFiPsXLk"
+      controls
+      width="584"
+      height="357"
+      autoplay
+    ></video>
+    <video class="how__video" controls="controls" controlslist="nodownload">
+      <source src="https://www.youtube.com/watch?v=akDbM3DtrTA" />
+    </video>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/akDbM3DtrTA?si=5qPv72JwMg54X6Yx"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      src="https://player.vimeo.com/video/917830735?h=973bccc9cf"
+      width="640"
+      height="564"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+      </main>
+      <footer></footer>
+
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
