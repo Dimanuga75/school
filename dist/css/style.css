@@ -69,6 +69,7 @@
   margin: 0 auto;
   max-width: 1920px;
   width: 100%;
+  background-color: #f9f8fd;
   overflow-x: hidden;
 }
 
@@ -249,7 +250,7 @@ body {
 .canvas__fone.left {
   left: 0;
   top: 0;
-  background-color: white;
+  background-color: #f9f8fd;
   height: 100%;
   width: 30%;
 }
@@ -257,7 +258,7 @@ body {
 .canvas__fone.right {
   right: 0;
   top: 0;
-  background-color: white;
+  background-color: #f9f8fd;
   height: 100%;
   width: 30%;
 }
@@ -340,6 +341,7 @@ body {
   column-gap: 10px;
   font-size: 20px;
 }
+
 .header__mob-menu {
   position: fixed;
   top: 0;
@@ -685,6 +687,9 @@ body {
     grid-row: 2/3;
   }
 }
+.how {
+  padding-bottom: clamp(60px, 7vw, 90px);
+}
 .how__text {
   margin: 27px auto;
   max-width: 642px;
@@ -766,4 +771,177 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.stage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 54px;
+  border-radius: 40px;
+  gap: 30px;
+  margin-bottom: 26px;
+}
+@media (max-width: 640px) {
+  .stage {
+    padding: 30px 20px;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+}
+.stage__item p {
+  font-size: 77px;
+  color: #38bff2;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-weight: bold;
+}
+@media (max-width: 1400px) {
+  .stage__item p {
+    font-size: calc(50px + 27 * (100vw - 320px) / 1080);
+  }
+}
+@media (max-width: 640px) {
+  .stage__item p {
+    margin-bottom: 7px;
+  }
+}
+.stage__item h3 {
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 266px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+@media (max-width: 1400px) {
+  .stage__item h3 {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1080);
+  }
+}
+@media (max-width: 640px) {
+  .stage__item h3 {
+    margin-bottom: 14px;
+  }
+}
+.stage__item span {
+  font-size: 16px;
+  max-width: 240px;
+  display: block;
+}
+@media (max-width: 1400px) {
+  .stage__item span {
+    font-size: calc(12px + 4 * (100vw - 320px) / 1080);
+  }
+}
+
+.how__btn-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 110px;
+  padding: 12px 14px;
+  flex-wrap: wrap;
+}
+@media (max-width: 640px) {
+  .how__btn-box {
+    justify-content: center;
+    gap: 16px;
+    border-radius: 30px;
+  }
+}
+.how__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f15525;
+  padding: 20px;
+}
+.how__btn p {
+  display: inline-block;
+  width: 150px;
+  color: #fff;
+  font-size: 16px;
+}
+.how__btn-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Manrope;
+  max-width: 230px;
+}
+@media (max-width: 640px) {
+  .how__btn-text {
+    text-align: center;
+  }
+}
+
+.help.container {
+  background-color: #fff;
+  border-radius: 80px;
+  padding-top: clamp(12px, 6vw, 90px);
+  padding-bottom: clamp(12px, 6vw, 90px);
+}
+
+.help__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: clamp(12px, 2vw, 30px);
+  gap: clamp(12px, 2vw, 30px);
+  min-height: 313px;
+}
+.help__item h4 {
+  font-size: clamp(20px, 2vw, 32px);
+  font-weight: 600;
+  margin-bottom: 18px;
+  line-height: 30px;
+}
+.help__item p {
+  font-size: clamp(12px, 1vw, 16px);
+  margin-bottom: 15px;
+  max-width: 500px;
+  line-height: 25px;
+}
+.help__text {
+  background: #eaf2f5;
+  border-radius: 40px;
+  flex-grow: 1;
+  padding-left: clamp(20px, 7vw, 100px);
+  padding-top: clamp(38px, 4vw, 54px);
+  padding-right: 23px;
+  padding-bottom: 20px;
+}
+
+.help__item:last-child {
+  margin-bottom: 0;
+}
+
+.help-img {
+  width: 100%;
+  max-width: 400px;
+  background: #eaf2f5;
+  border-radius: 40px;
+  padding: clamp(34px, 3vw, 40px) clamp(48px, 5vw, 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-img .help-img {
+  order: 2;
+}
+
+@media (max-width: 940px) {
+  .help__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-img .help-img {
+    order: unset;
+  }
+  .help__text {
+    max-width: 400px;
+  }
 }
