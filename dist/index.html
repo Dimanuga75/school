@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="files/reset.css" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="files/reset.css?_v=20240318124402" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240318124402" />
   <link rel="icon" href="files/favicon.ico?" type="image/x-icon" />
   <link rel="”icon”" href="files/favicon.png?" type="image/png" />
   <title>Главная</title>
@@ -21,15 +21,17 @@
       </div>
       <nav class="header__menu">
         <ul class="header__list">
-          <li class="menu__item"><a href="#">Чему вы научитесь</a></li>
-          <li class="menu__item"><a href="#">Процесс обучения</a></li>
-          <li class="menu__item"><a href="#">Стоимость</a></li>
-          <li class="menu__item"><a href="#">Контакты</a></li>
+          <li class="menu__item">
+            <a href="#technology">Чему вы научитесь</a>
+          </li>
+          <li class="menu__item"><a href="#how">Процесс обучения</a></li>
+          <li class="menu__item"><a href="#price">Стоимость</a></li>
+          <li class="menu__item"><a href="#contact">Контакты</a></li>
         </ul>
       </nav>
 
       <div class="header__office">
-        <a href="#" class="header__reg">Регистрация</a>
+        <button class="header__reg">Регистрация</button>
         <button class="header__btn btn">
           <span class="header__btn-img"
             ><img src="img/header/Rectangle 8.svg" alt="кабинет"
@@ -76,10 +78,12 @@
       <button class="header__close"></button>
       <nav class="header__menu-mob">
         <ul class="header__list-mob">
-          <li class="menu__item"><a href="#">Чему вы научитесь</a></li>
-          <li class="menu__item"><a href="#">Процесс обучения</a></li>
-          <li class="menu__item"><a href="#">Стоимость</a></li>
-          <li class="menu__item"><a href="#">Контакты</a></li>
+          <li class="menu__item">
+            <a href="#technology">Чему вы научитесь</a>
+          </li>
+          <li class="menu__item"><a href="#how">Процесс обучения</a></li>
+          <li class="menu__item"><a href="#price">Стоимость</a></li>
+          <li class="menu__item"><a href="#contact">Контакты</a></li>
           <li class="menu__item">
             <a href="#" class="header__reg mob">Регистрация</a>
           </li>
@@ -96,12 +100,12 @@
 </header>
 
       <main>
-        <section class="technology">
+        <section class="technology" id="technology">
   <div class="container">
     <h2 class="main__title">Какие технологии вы изучите:</h2>
     <div class="technology__items-box">
       <div class="technology__img">
-        <img src="img/main/g10.png" alt="школа программирования" />
+        <picture><source srcset="img/main/g10.webp" type="image/webp"><img src="img/main/g10.png" alt="школа программирования" /></picture>
       </div>
       <div class="technology__item-box">
         <p
@@ -213,7 +217,7 @@
         />
       </button>
       <div class="video__back">
-        <img src="img/main/video-back.png" alt="fone" />
+        <picture><source srcset="img/main/video-back.webp" type="image/webp"><img src="img/main/video-back.png" alt="fone" /></picture>
       </div>
     </div>
     <div class="stage">
@@ -258,7 +262,7 @@
 <div class="help container">
   <div class="help__item">
     <div class="help-img">
-      <img src="img/main/help1.png" alt="поддержка" />
+      <picture><source srcset="img/main/help1.webp" type="image/webp"><img src="img/main/help1.png" alt="поддержка" /></picture>
     </div>
     <div class="help__text">
       <h4>Помощь и поддержка</h4>
@@ -275,7 +279,7 @@
   </div>
   <div class="help__item right-img">
     <div class="help-img">
-      <img src="img/main/help2.png" alt="поддержка" />
+      <picture><source srcset="img/main/help2.webp" type="image/webp"><img src="img/main/help2.png" alt="поддержка" /></picture>
     </div>
     <div class="help__text">
       <h4>Методика обучения</h4>
@@ -289,11 +293,193 @@
     </div>
   </div>
 </div>
+<!--<style>
+  .btn__9999 {
+    filter: blur(174px);
+    background: rgba(25, 26, 38, 0.38);
+    width: 671px;
+    height: 165px;
+    border-radius: 100% 100%;
+  }
+</style>-->
+<section class="price" id="price">
+  <div class="container">
+    <h2 class="main__title">Стоимость обучения</h2>
+    <div class="price-info__box">
+      <div class="price-info__item">
+        <div class="price-info__img">
+          <img src="img/main/price1.svg" alt="стоимость обучения" />
+        </div>
+        <p class="price-info__text">
+          Весь курс разбит на несколько блоков. Оплата поэтапная вы платите
+          только за тот блок, который сейчас проходите.
+        </p>
+      </div>
+      <div class="price-info__item">
+        <div class="price-info__img">
+          <img src="img/main/price2.svg" alt="стоимость обучения" />
+        </div>
+        <p class="price-info__text">
+          Любой из блоков вы можете оплатить в рассрочку
+        </p>
+      </div>
+      <div class="price-info__item">
+        <div class="price-info__img">
+          <img src="img/main/price3.svg" alt="стоимость обучения" />
+        </div>
+        <p class="price-info__text">
+          Если передумаете учиться, то возврат можно оформить в любой момент.
+          Возвращаем деньги за 3 рабочих дня.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="price-box">
+  <div class="price-box__img-box">
+    <div class="price-box__img">
+      <img src="img/phone.svg" alt="стоимость обучения" />
+    </div>
+    <div class="price-box__img">
+      <img src="img/Arrow_slider.svg" alt="стоимость обучения" />
+    </div>
+  </div>
+  <div class="price-box__item">
+    <h6 class="price-box__title">Блок</h6>
+    <h6 class="price-box__title">Стоимость (₽)</h6>
+    <h6 class="price-box__title">Расчетное время обучения (мес.) *</h6>
+  </div>
+  <p class="price-box__item">
+    <span class="price-box__point">Введение в программирование </span>
+    <span class="price-box__point">Бесплатно</span>
+    <span class="price-box__point hour">0.5</span>
+  </p>
+  <p class="price-box__item">
+    <span class="price-box__point">Основы программирования на Python </span>
+    <span class="price-box__point price__item">9900</span>
+    <span class="price-box__point hour">1</span>
+  </p>
+  <p class="price-box__item">
+    <span class="price-box__point">Python, продвинутый уровень</span>
+    <span class="price-box__point price__item">14900</span>
+    <span class="price-box__point hour">2.5</span>
+  </p>
+  <p class="price-box__item">
+    <span class="price-box__point">Сети + фреймворк Flask</span>
+    <span class="price-box__point price__item">14900</span>
+    <span class="price-box__point hour">2.5</span>
+  </p>
+  <p class="price-box__item">
+    <span class="price-box__point">Базы данных</span>
+    <span class="price-box__point price__item">14900</span>
+    <span class="price-box__point hour">2</span>
+  </p>
+  <p class="price-box__item">
+    <span class="price-box__point">Фреймворк Django </span>
+    <span class="price-box__point price__item">14800</span>
+    <span class="price-box__point hour">2</span>
+  </p>
+  <p class="price-box__item">
+    <span class="price-box__point">Разработка «боевого» проекта </span>
+    <span class="price-box__point price__item">9900</span>
+    <span class="price-box__point hour">1.5</span>
+  </p>
+  <p class="price-box__item">
+    <span class="price-box__point bold">Итого</span>
+    <span class="price-box__point bold total-price">79400</span>
+    <span class="price-box__point bold total-hour">12</span>
+  </p>
+</div>
+<div class="container">
+  <div class="star-text">* если занятиям уделяется около 20 часов в неделю</div>
+  <div class="training__info">
+    <div class="training__info-img">
+      <img src="img/main/training.svg" alt="обучение программирование" />
+    </div>
+    <p class="training__text">
+      Все блоки проходятся строго по порядку. Пропустить какой-то блок или
+      начать обучение с середины нельзя, даже если вы считаете, что уже знаете
+      какую-то часть материала. Только так мы можем гарантировать, что вы
+      получите все знания, предусмотренные учебной программой.
+    </p>
+    <button class="how__btn btn training__btn">
+      <p>Начать обучение</p>
+      <span class="header__btn-img"
+        ><img src="img/header/Arrow 1.svg" alt="Пройти тестирование"
+      /></span>
+    </button>
+  </div>
+</div>
 
       </main>
-      <footer></footer>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer-box__left">
+        <div class="footer__logo-box">
+          <img src="img/footer/footer-logo.svg" alt="школа програмированния" />
+          <p class="footer__logo-text">Школа программирования</p>
+        </div>
+        <div class="footer__social-box">
+          <a href="" class="footer__social-link"
+            ><img src="img/footer/insta.svg" alt="социальная сеть" /></a
+          ><a href="" class="footer__social-link"
+            ><img src="img/footer/vk.svg" alt="вконтакте" /></a
+          ><a href="" class="footer__social-link"
+            ><img src="img/footer/facebook.svg" alt="социальная сеть" /></a
+          ><a href="" class="footer__social-link"
+            ><img src="img/footer/youtube.svg" alt="ютуб"
+          /></a>
+        </div>
+      </div>
+      <nav class="footer__menu">
+        <li class="footer__menu-item">
+          <a href="#technology" class="footer__menu-link">Чему вы научитесь</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#how" class="footer__menu-link">Процесс обучения</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#price" class="footer__menu-link">Стоимость</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#contact" class="footer__menu-link">Контакты</a>
+        </li>
+        <li class="footer__menu-item">
+          <button class="footer__menu-link">Регистрация</button>
+        </li>
+      </nav>
+      <div class="footer-box__right" id="contact">
+        <div class="contact__box">
+          <a class="contact__phone" href="tel:+79500957119">+7(495)348 93 96</a>
+          <a class="contact__email" href="mailto:citystroitorg@mail.ru"
+            >info@ytyt.ru</a
+          >
+        </div>
+        <div class="legal__box">
+          <p class="legal__item">ИП Умаров Т. А.</p>
+          <p class="legal__item">ИНН 745216229809</p>
+          <p class="legal__item">ОГРНИП 315745200001358</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-political__box">
+      <div class="footer-political__copyright">
+        © 2022 ytyt — Все права защищены
+      </div>
+      <div class="footer-political__inner">
+        <a href="#" class="footer-political__politic agree"
+          >Пользовательское соглашение</a
+        >
+        <a href="#" class="footer-political__politic"
+          >Политика конфиденциальности</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
 
     </div>
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js?_v=20240318124402"></script>
   </body>
 </html>

@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="files/reset.css" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="files/reset.css?_v=20240318124402" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240318124402" />
   <link rel="icon" href="files/favicon.ico?" type="image/x-icon" />
   <link rel="”icon”" href="files/favicon.png?" type="image/png" />
   <title>Про нас</title>
@@ -20,15 +20,17 @@
       </div>
       <nav class="header__menu">
         <ul class="header__list">
-          <li class="menu__item"><a href="#">Чему вы научитесь</a></li>
-          <li class="menu__item"><a href="#">Процесс обучения</a></li>
-          <li class="menu__item"><a href="#">Стоимость</a></li>
-          <li class="menu__item"><a href="#">Контакты</a></li>
+          <li class="menu__item">
+            <a href="#technology">Чему вы научитесь</a>
+          </li>
+          <li class="menu__item"><a href="#how">Процесс обучения</a></li>
+          <li class="menu__item"><a href="#price">Стоимость</a></li>
+          <li class="menu__item"><a href="#contact">Контакты</a></li>
         </ul>
       </nav>
 
       <div class="header__office">
-        <a href="#" class="header__reg">Регистрация</a>
+        <button class="header__reg">Регистрация</button>
         <button class="header__btn btn">
           <span class="header__btn-img"
             ><img src="img/header/Rectangle 8.svg" alt="кабинет"
@@ -75,10 +77,12 @@
       <button class="header__close"></button>
       <nav class="header__menu-mob">
         <ul class="header__list-mob">
-          <li class="menu__item"><a href="#">Чему вы научитесь</a></li>
-          <li class="menu__item"><a href="#">Процесс обучения</a></li>
-          <li class="menu__item"><a href="#">Стоимость</a></li>
-          <li class="menu__item"><a href="#">Контакты</a></li>
+          <li class="menu__item">
+            <a href="#technology">Чему вы научитесь</a>
+          </li>
+          <li class="menu__item"><a href="#how">Процесс обучения</a></li>
+          <li class="menu__item"><a href="#price">Стоимость</a></li>
+          <li class="menu__item"><a href="#contact">Контакты</a></li>
           <li class="menu__item">
             <a href="#" class="header__reg mob">Регистрация</a>
           </li>
@@ -95,7 +99,72 @@
 </header>
 
     <main></main>
-    <footer></footer>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer-box__left">
+        <div class="footer__logo-box">
+          <img src="img/footer/footer-logo.svg" alt="школа програмированния" />
+          <p class="footer__logo-text">Школа программирования</p>
+        </div>
+        <div class="footer__social-box">
+          <a href="" class="footer__social-link"
+            ><img src="img/footer/insta.svg" alt="социальная сеть" /></a
+          ><a href="" class="footer__social-link"
+            ><img src="img/footer/vk.svg" alt="вконтакте" /></a
+          ><a href="" class="footer__social-link"
+            ><img src="img/footer/facebook.svg" alt="социальная сеть" /></a
+          ><a href="" class="footer__social-link"
+            ><img src="img/footer/youtube.svg" alt="ютуб"
+          /></a>
+        </div>
+      </div>
+      <nav class="footer__menu">
+        <li class="footer__menu-item">
+          <a href="#technology" class="footer__menu-link">Чему вы научитесь</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#how" class="footer__menu-link">Процесс обучения</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#price" class="footer__menu-link">Стоимость</a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#contact" class="footer__menu-link">Контакты</a>
+        </li>
+        <li class="footer__menu-item">
+          <button class="footer__menu-link">Регистрация</button>
+        </li>
+      </nav>
+      <div class="footer-box__right" id="contact">
+        <div class="contact__box">
+          <a class="contact__phone" href="tel:+79500957119">+7(495)348 93 96</a>
+          <a class="contact__email" href="mailto:citystroitorg@mail.ru"
+            >info@ytyt.ru</a
+          >
+        </div>
+        <div class="legal__box">
+          <p class="legal__item">ИП Умаров Т. А.</p>
+          <p class="legal__item">ИНН 745216229809</p>
+          <p class="legal__item">ОГРНИП 315745200001358</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-political__box">
+      <div class="footer-political__copyright">
+        © 2022 ytyt — Все права защищены
+      </div>
+      <div class="footer-political__inner">
+        <a href="#" class="footer-political__politic agree"
+          >Пользовательское соглашение</a
+        >
+        <a href="#" class="footer-political__politic"
+          >Политика конфиденциальности</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
 
   </body>
 </html>
