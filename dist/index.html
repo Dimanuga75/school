@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="files/reset.css?_v=20240318140142" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240318140142" />
+  <link rel="stylesheet" href="files/reset.css?_v=20240402091808" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240402091808" />
   <link rel="icon" href="files/favicon.ico?" type="image/x-icon" />
   <link rel="”icon”" href="files/favicon.png?" type="image/png" />
   <title>Главная</title>
@@ -50,10 +50,13 @@
       <p class="header__text">
         Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам
       </p>
-      <button class="header__title-btn btn">
-        <span class="header__content-text">Пройти тестирование</span>
-        <span class="header__btn-img"
-          ><img src="img/header/Arrow 1.svg" alt="Пройти тестирование"
+      <button class="header__title-btn btn test-open">
+        <span class="header__content-text test-open">Пройти тестирование</span>
+        <span class="header__btn-img test-open"
+          ><img
+            class="test-open"
+            src="img/header/Arrow 1.svg"
+            alt="Пройти тестирование"
         /></span>
       </button>
     </div>
@@ -247,10 +250,13 @@
       </div>
     </div>
     <div class="how__btn-box">
-      <button class="how__btn btn">
-        <p>Начать обучение</p>
-        <span class="header__btn-img"
-          ><img src="img/header/Arrow 1.svg" alt="Пройти тестирование"
+      <button class="how__btn btn test-open">
+        <p class="test-open">Начать обучение</p>
+        <span class="header__btn-img test-open"
+          ><img
+            class="test-open"
+            src="img/header/Arrow 1.svg"
+            alt="Пройти тестирование"
         /></span>
       </button>
       <p class="how__btn-text">
@@ -404,12 +410,430 @@
       какую-то часть материала. Только так мы можем гарантировать, что вы
       получите все знания, предусмотренные учебной программой.
     </p>
-    <button class="how__btn btn training__btn">
-      <p>Начать обучение</p>
-      <span class="header__btn-img"
-        ><img src="img/header/Arrow 1.svg" alt="Пройти тестирование"
+    <button class="how__btn btn training__btn test-open">
+      <p class="test-open">Начать обучение</p>
+      <span class="header__btn-img test-open"
+        ><img
+          class="test-open"
+          src="img/header/Arrow 1.svg"
+          alt="Пройти тестирование"
       /></span>
     </button>
+  </div>
+</div>
+
+        <div class="test">
+  <div class="test__fone">
+    <div class="test__box">
+      <button class="test__close"></button>
+
+      <div class="test__item" data-slider="0">
+        <h3 class="test__item-title">
+          Перед тем, как приступить к обучению, необходимо пройти небольшой тест
+        </h3>
+        <p class="test__item-text">
+          Тест состоит из 3 заданий на мышление и прочие навыки. Задания не
+          самые сложные. Но ни в коем случае не выбирайте ответы наугад.
+        </p>
+        <button class="test__btn-next btn begin__test" data-btn="1">
+          <p class="begin__test">Начать тест</p>
+          <span class="header__btn-img begin__test"
+            ><img
+              class="begin__test"
+              src="img/header/Arrow 1.svg"
+              alt="Пройти тестирование"
+          /></span>
+        </button>
+      </div>
+      <div class="test__item" data-slider="1">
+        <div class="test__task-box">
+          <h5 class="test__item-subtitle">ЗАДАНИЕ №1</h5>
+          <p class="test__item-task">
+            Представьте, перед вами четыре стакана, наполненных водой. В каждом
+            стакане находятся предметы. Так:
+          </p>
+        </div>
+        <div class="task__box">
+          <div class="task__img">
+            <img src="img/test/задача 1.png" alt="задание" />
+          </div>
+          <div class="task__description">
+            <p>В первом стакане – металлические наручные часы;</p>
+            <p>Во втором стакане – канцелярская скрепка;</p>
+            <p>В третьем стакане – металлические ножницы;</p>
+            <p>В четвертом стакане – ластик.</p>
+          </div>
+        </div>
+        <div class="task__question">
+          Вопрос: в каком стакане воды больше, чем в остальных?
+        </div>
+        <form class="test__form" action="#">
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task1"
+                class="test__input"
+                name="glass"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task1" class="test__label"
+                ><span>в первом стакане</span>
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 2
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task2"
+                class="test__input"
+                name="glass"
+                type="radio"
+                data-status="true"
+              />
+              <label for="task2" class="test__label"
+                ><span>во втором стакане</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gal.webp" type="image/webp"><img src="img/test/gal.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text right">
+              Верный ответ! Все дело в скрепке, которая по сравнению с другими
+              предметами имеет меньший объём. Соответственно, для необходимого
+              уровня воды требуется больше воды. Правильный ответ на картнике 2
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task3"
+                class="test__input"
+                name="glass"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task3" class="test__label"
+                ><span>в третьем стакане</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 2
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task4"
+                class="test__input"
+                name="glass"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task4" class="test__label"
+                ><span>в четвёртом стакане</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 2
+            </div>
+          </div>
+        </form>
+        <button class="test__btn-next btn noclick btn-more" data-btn="2">
+          Далее
+        </button>
+      </div>
+      <div class="test__item" data-slider="2">
+        <div class="test__task-box">
+          <h5 class="test__item-subtitle">ЗАДАНИЕ №2</h5>
+          <p class="test__item-task">
+            В кафе быстрого питания зашли четыре посетителя. Схематично эту
+            ситуацию можно представить так:
+          </p>
+        </div>
+        <div class="task__box">
+          <div class="task__img">
+            <picture><source srcset="img/test/задача2.webp" type="image/webp"><img src="img/test/задача2.png" alt="задание" /></picture>
+          </div>
+          <div class="task__description">
+            <p>Первый посетитель купил три бургера и заплатил 300 рублей;</p>
+            <p>
+              Второй посетитель купил один бургер и две порции картофеля фри и
+              заплатил 200 рублей;
+            </p>
+            <p>
+              Третий посетитель купил два куска пиццы и одну порцию картофеля
+              фри и заплатил 90 рублей;
+            </p>
+            <p>
+              Четвертый посетитель купил один бургер, одну порцию картофеля фри
+              и один кусок пиццы.
+            </p>
+          </div>
+        </div>
+        <div class="task__question">
+          Вопрос: сколько заплатил четвертый посетитель?
+        </div>
+        <form class="test__form" action="#">
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task2-1"
+                class="test__input"
+                name="cafe"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task2-1" class="test__label"
+                ><span>190 рублей</span>
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 4
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task2-2"
+                class="test__input"
+                name="cafe"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task2-2" class="test__label"
+                ><span>210 рублей</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 4
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task2-3"
+                class="test__input"
+                name="cafe"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task2-3" class="test__label"
+                ><span>160 рублей</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 4
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task2-4"
+                class="test__input"
+                name="cafe"
+                type="radio"
+                data-status="true"
+              />
+              <label for="task2-4" class="test__label"
+                ><span>170 рублей</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gal.webp" type="image/webp"><img src="img/test/gal.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text right">
+              Верный ответ. Если 3 бургера составили 300 рублей, то 1 бургер
+              стоит 100 рублей (300/3). Если 2 посетитель заплатил 100 рублей за
+              бургер, то еще 100 рублей приходится на 2 порции картофеля, то
+              есть 1 порция картофеля фри стоит 50 рублей (100/2). Если 3
+              посетитель заплатил 90 рублей, потратив 50 рублей на картофель, а
+              40 рублей на 2 пиццы, то 1 пицца стоит 20 рублей (40/2).
+              Соответственно 4 посетитель заплатил: 100 + 50 + 20 = 170 рублей.
+            </div>
+          </div>
+        </form>
+        <button class="test__btn-next btn noclick btn-more" data-btn="3">
+          Далее
+        </button>
+      </div>
+      <div class="test__item" data-slider="3">
+        <div class="test__task-box">
+          <h5 class="test__item-subtitle">ЗАДАНИЕ №3</h5>
+          <p class="test__item-task">
+            Представьте, что воздушный шар уносится непрерывным ветром на юг.
+            Тогда в какую сторону развеваются флаги на его гондоле?
+          </p>
+        </div>
+        <div class="task__box">
+          <div class="task__img">
+            <img src="img/test/задача 3.webp" alt="задание" />
+          </div>
+        </div>
+        <div class="task__question">
+          Вопрос: Представьте, что воздушный шар уносится непрерывным ветром на
+          юг. Тогда в какую сторону развеваются флаги на его гондоле?
+        </div>
+        <form class="test__form" action="#">
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task3-1"
+                class="test__input"
+                name="ball"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task3-1" class="test__label"
+                ><span>В сторону востока</span>
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 3
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task3-2"
+                class="test__input"
+                name="ball"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task3-2" class="test__label"
+                ><span>В сторону запада</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 3
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task3-3"
+                class="test__input"
+                name="ball"
+                type="radio"
+                data-status="true"
+              />
+              <label for="task3-3" class="test__label"
+                ><span>Не будут развиваться</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gal.webp" type="image/webp"><img src="img/test/gal.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text right">
+              Верный ответ. Если шар уносится воздушным течением, значит, по
+              отно­шению к окружающему его воздуху он находится в покое. Флаги
+              не станут развиваться на ветру: они будут свисать вниз, как при
+              безветрии.
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task4-4"
+                class="test__input"
+                name="ball"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task4-4" class="test__label"
+                ><span>В сторону юга</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text">
+              Ответ не верный. Пояснение в варианте 3
+            </div>
+          </div>
+          <div class="test__radio-item">
+            <div class="test__radio-label">
+              <input
+                id="task4-5"
+                class="test__input"
+                name="ball"
+                type="radio"
+                data-status="false"
+              />
+              <label for="task4-5" class="test__label"
+                ><span>В сторону севера</span>
+
+                <div class="test__radio-img">
+                  <picture><source srcset="img/test/gross.webp" type="image/webp"><img src="img/test/gross.png" alt="test" /></picture>
+                </div>
+              </label>
+            </div>
+            <div class="test__radio-text right">
+              Ответ не верный. Пояснение в варианте 3
+            </div>
+          </div>
+        </form>
+        <button
+          class="test__btn-next btn noclick end-test btn-more"
+          data-btn="4"
+        >
+          Далее
+        </button>
+      </div>
+      <div class="test__item" data-slider="4">
+        <p class="test__item-task">
+          Тест окончен. Начните обучение прямо сейчас, доступ ко вводным урокам
+          уже открыт.
+        </p>
+
+        <button class="test__btn-sub btn end__test" type="submit">
+          <p class="end__test">Начать учиться бесплатно</p>
+          <span class="header__btn-img end__test"
+            ><img
+              class="end__test"
+              src="img/header/Arrow 1.svg"
+              alt="Начать учиться бесплатно"
+          /></span>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -482,6 +906,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20240318140142"></script>
+    <script src="js/app.min.js?_v=20240402091808"></script>
   </body>
 </html>
